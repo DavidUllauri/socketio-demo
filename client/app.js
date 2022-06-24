@@ -7,7 +7,11 @@ socket.on('message', (text) => {
     document.querySelector('ul').appendChild(el);
 });
 
-document.querySelector('button').onclick = () => {
-    const text = document.querySelector('input').value;
-    socket.emit('message', text);
-};
+document.getElementById('message-form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const msg = document.getElementById('msg-i');
+
+    socket.emit('message', msg.value);
+    
+    msg.value = "";
+});
