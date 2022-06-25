@@ -9,14 +9,22 @@
     <script defer src="app.js"></script>
     <link rel="stylesheet" href="style.css">
 <body>
-    <section id="chat">
-        <div class="container"></div>
-    </section>
-    <form action="/" method="post" id="message-form">
-        <div class="container">
-            <input type="text" id="msg-i" name="message" placeholder="message">
-            <button type="submit">Send</button>
-        </div>
-    </form>
+    <div id="wrapper">
+        <section id="chat">
+            <div class="container"></div>
+        </section>
+        <form action="/" method="post" id="message-form">
+            <div class="container">
+                <input type="text" id="msg-i" name="message" placeholder="message" autocomplete="off">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+        <form action="/" method="post" id="room-form">
+            <div class="container">
+                <input type="text" id="room-i" name="room" placeholder="Room ID" autocomplete="off">
+                <button type="submit" id="room-button">Join</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

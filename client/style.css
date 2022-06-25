@@ -3,11 +3,14 @@ body {
     color: #fff;
     font-size: 1.5rem;
     font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 input {
     background-color: #242424;
     color: #fff;
+    font-size: 1em;
 }
 
 button {
@@ -18,6 +21,15 @@ button {
     font-weight: 700;
     font-size: 1em;
     border-radius: 6px;
+    min-width: 80px;
+}
+
+#wrapper {
+    box-sizing: border-box;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr auto auto;
+    padding: 16px 0;
 }
 
 .msg-item {
@@ -53,6 +65,7 @@ form .container {
     gap: 10px;
 }
 
-form #msg-i {
-    font-size: 1em;
+#chat {
+    overflow: scroll;
+    overflow-x: hidden;
 }
