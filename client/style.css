@@ -1,0 +1,58 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+}
+
+input {
+    background-color: #242424;
+    color: #fff;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: rgb(94,186, 125);
+    font-weight: 700;
+    font-size: 1em;
+    border-radius: 6px;
+}
+
+.msg-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-img {
+    background-color: rgb(94,186, 125);
+    color: #000;
+    margin: auto;
+    padding-bottom: 1.5em;
+    padding-top: 0.5em;
+    border-radius: 6px;
+    height: 0;
+    width: 2em;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+form .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+}
+
+form #msg-i {
+    font-size: 1em;
+}

@@ -8,7 +8,8 @@ io.on("connection", (socket) => {
     console.log('A user connected');
     socket.on('message', (message) => {
         console.log(message);
-        io.emit('message', `${socket.id.substr(0,2)} said ${message}`);
+        let name = socket.id.substr(0,2);
+        io.emit('message', name, message);
     });
 });
 

@@ -7,11 +7,16 @@
     <title>Sockets</title>
     <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script></head>
     <script defer src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
 <body>
-    <ul></ul>
+    <section id="chat">
+        <div class="container"></div>
+    </section>
     <form action="/" method="post" id="message-form">
-        <input type="text" id="msg-i" name="message" placeholder="message">
-        <button type="submit">Send Message</button>
+        <div class="container">
+            <input type="text" id="msg-i" name="message" placeholder="message">
+            <button type="submit">Send</button>
+        </div>
     </form>
 </body>
 </html>
